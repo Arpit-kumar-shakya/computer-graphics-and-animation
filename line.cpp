@@ -5,7 +5,7 @@ int main() {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "");  // Initialize graphics mode
 
-    circle(250, 200, 100);    // Draw a circle
+    line(50,50,50,80);    // Draw a circle
     getch();
     closegraph();
     return 0;
