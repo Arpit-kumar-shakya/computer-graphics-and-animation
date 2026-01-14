@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build_Run_Graphics",
+      "type": "shell",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "g++ \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 && \"${fileDirname}\\${fileBasenameNoExtension}.exe\""
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
