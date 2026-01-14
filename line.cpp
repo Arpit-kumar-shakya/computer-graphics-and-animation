@@ -1,11 +1,11 @@
-#include<graphics.h>
-#include<conio.h>
+#include <graphics.h>
+#include <conio.h>
+
 int main() {
-    int gd=DETECT,gm;
-    initgraph(&gd,&gm,NULL);
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, "");  // Initialize graphics mode
 
-    line(50,50,50,80);
-
+    circle(250, 200, 100);    // Draw a circle
     getch();
     closegraph();
     return 0;
