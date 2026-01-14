@@ -3,9 +3,9 @@
 
 int main() {
     int gd = DETECT, gm;
-    initgraph(&gd, &gm, "");  // Initialize graphics mode
+    initgraph(&gd, &gm, "");  
 
-    line(50,50,50,80);    // Draw a circle
+    line(50,50,50,80);    
     getch();
     closegraph();
     return 0;
